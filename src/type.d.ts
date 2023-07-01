@@ -8,3 +8,12 @@ export interface Card {
     attack?: number;
     defense?: number;
 }
+
+export interface Binder {
+    id: number;
+    name: string;
+    cards: (Card & {
+        quantity: number;
+    })[]
+
+}
