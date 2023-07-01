@@ -8,3 +8,11 @@ export interface Card {
     attack?: number;
     defense?: number;
 }
+
+export interface Deck {
+    id: number;
+    name: string;
+    userId: number;
+    cardList: number[];
+}
+
